@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Evaluacion 1 programacion II</string>
+    <string name="total">TOTAL</string>
+    <string name="cant" tools:ignore="Typos">cant.</string>
+    <string name="_0">0</string>
+    <string name="imgplato1" tools:ignore="Typos">imgplato1</string>
+    <string name="pastel_de_choclo">Pastel de Choclo</string>
+    <string name="cazuela">Cazuela</string>
+    <string name="S0">$0</string>
+    <string name="propina">Propina</string>
+    <string name="comida">Comida</string>
+
+</resources>
