@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/pastelimg"
+        android:layout_width="155dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:contentDescription="@string/imgplato1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/pastel_de_choclo" />
+
+    <TextView
+        android:id="@+id/textocant1"
+        android:layout_width="37dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/cant"
+        android:textColor="#626161"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/pastelimg"
+        app:layout_constraintTop_toBottomOf="@+id/plato1" />
+
+    <EditText
+        android:id="@+id/cant1"
+        android:layout_width="51dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="@string/_0"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toEndOf="@+id/textocant1"
+        app:layout_constraintTop_toBottomOf="@+id/plato1" />
+
+    <TextView
+        android:id="@+id/plato1"
+        android:layout_width="155dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/pastel_de_choclo"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/pastelimg"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/cazuelaimg"
+        android:layout_width="154dp"
+        android:layout_height="109dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pastelimg"
+        app:srcCompat="@drawable/cazuela_chilena" />
+
+    <TextView
+        android:id="@+id/plato2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/cazuela"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/cazuelaimg"
+        app:layout_constraintTop_toBottomOf="@+id/pastelimg" />
+
+    <EditText
+        android:id="@+id/cant2"
+        android:layout_width="57dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/_0"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toEndOf="@+id/textocant2"
+        app:layout_constraintTop_toBottomOf="@+id/plato2" />
+
+    <TextView
+        android:id="@+id/textocant2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/cant"
+        android:textColor="#626161"
+        app:layout_constraintStart_toEndOf="@+id/cazuelaimg"
+        app:layout_constraintTop_toBottomOf="@+id/plato2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="237dp"
+        android:layout_height="171dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logorestaurant" />
+
+    <TextView
+        android:id="@+id/txtPropina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/propina"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtComida" />
+
+    <TextView
+        android:id="@+id/montoComida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:text="@string/S0"
+        app:layout_constraintBottom_toBottomOf="@+id/txtComida"
+        app:layout_constraintStart_toEndOf="@+id/txtComida" />
+
+    <TextView
+        android:id="@+id/montoPropina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/S0"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPropina"
+        app:layout_constraintStart_toEndOf="@+id/txtPropina"
+        app:layout_constraintTop_toBottomOf="@+id/montoComida"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtComida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comida"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cazuelaimg"
+        app:layout_constraintVertical_bias="0.389" />
+
+    <Switch
+        android:id="@+id/switchpropina"
+        android:layout_width="66dp"
+        android:layout_height="48dp"
+        android:checked="true"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtPropina"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtComida"
+        app:layout_constraintVertical_bias="0.09" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/total"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPropina" />
+
+    <TextView
+        android:id="@+id/montoTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="@string/S0"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtTotal"
+        app:layout_constraintTop_toBottomOf="@+id/montoPropina"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/plato1Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/S0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/pastelimg"
+        app:layout_constraintTop_toBottomOf="@+id/cant1" />
+
+    <TextView
+        android:id="@+id/plato2Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/S0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/cazuelaimg"
+        app:layout_constraintTop_toBottomOf="@+id/cant2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
